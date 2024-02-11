@@ -4,7 +4,7 @@ import {MainBackground} from '../utility';
 
 interface PropsInterface {
    pushedButton: boolean,
-   setPushedButton: (a: boolean) => void,
+   setPushedButton: Dispatch<boolean>,
 }
 
 const useStyles = makeStyles({
