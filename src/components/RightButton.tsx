@@ -2,6 +2,10 @@ import React from "react";
 import {makeStyles} from '@material-ui/core/styles';
 import {MainBackground} from '../utility';
 
+interface PropsInterface {
+   pushedButton: boolean,
+   setPushedButton: (a: boolean) => void,
+}
 
 const useStyles = makeStyles({
    rightButton: {
@@ -48,7 +52,7 @@ const useStyles = makeStyles({
    }
 });
 
-export default function RightButton({pushedButton, setPushedButton}:any) {
+export default function RightButton({pushedButton, setPushedButton}:PropsInterface) {
    const classes = useStyles();
 
    function onClick () {

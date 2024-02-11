@@ -2,7 +2,10 @@ import React, { Dispatch } from "react";
 import {makeStyles} from '@material-ui/core/styles';
 import {MainBackground} from '../utility';
 
-
+interface PropsInterface {
+   pushedButton: boolean,
+   setPushedButton: (a: boolean) => void,
+}
 
 const useStyles = makeStyles({
    leftButton: {
@@ -48,7 +51,7 @@ const useStyles = makeStyles({
    }
 });
 
-export default function LeftButton({pushedButton, setPushedButton}:any) {
+export default function LeftButton({pushedButton, setPushedButton}:PropsInterface) {
    const classes = useStyles();
 
    function onClick () {

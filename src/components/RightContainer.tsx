@@ -6,7 +6,7 @@ import RightButton from './RightButton';
 
 
 export default function Container() { 
-   const [pushedButton, setPushedButton] = useState(true);
+   const [pushedButton, setPushedButton] = useState<boolean>(true);
 
    const useStyles = makeStyles ({
       outWrap: {

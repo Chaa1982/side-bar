@@ -6,7 +6,7 @@ import LeftButton from './LeftButton';
 
 
 export default function Container() { 
-   const [pushedButton, setPushedButton] = useState(true);
+   const [pushedButton, setPushedButton] = useState<boolean>(true);
 
    const useStyles = makeStyles ({
       container: {
@@ -15,7 +15,7 @@ export default function Container() {
          height: '100vh',
          display: 'flex',
          alignItems: 'center',
-      
+         
       },
    });
    const classes = useStyles();
