@@ -59,11 +59,12 @@ const useStyles = makeStyles({
 
 export default function MyButton(props:PropsInterface) {
    const classes = useStyles(props);
+   const onClick = useCallback(() => {
+         console.log("new render")
+         props.setPushedButton(!props.pushedButton)
+   }, [props.pushedButton]);
 
-   function onClick () {
-      console.log("new render")
-      props.setPushedButton(!props.pushedButton);
-   }
+   
    console.log("new render2")
    return (
       <div className={classes.button} onClick={() => onClick()}>

@@ -6,7 +6,8 @@ export default function App () {
    return (
       <>
          {/* props is 'left' or 'right' */}
-         <Container side='right'/>
+         <Container side='left'/>
+      
       </>
      
    )
