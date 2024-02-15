@@ -1,13 +1,12 @@
 import React from 'react';
-import LeftContainer from './LeftContainer';
-import RightContainer from './RightContainer';
+import Container from './Container';
 
 
 export default function App () {
    return (
       <>
-         <LeftContainer />
-         <RightContainer />
+         {/* props is 'left' or 'right' */}
+         <Container side='right'/>
       </>
      
    )
